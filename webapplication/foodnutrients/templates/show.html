@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>macro nutrients</title>
+
+    <link rel="stylesheet" href="{%static '/style.css'%}"/>
+
+</head>
+<body>
+<style>
+body {
+ background-color:hsla(120,100%,25%,0.3);
+}
+</style>
+<table class="table table-striped table-bordered table-sm">
+<thead class="thead-dark">
+<center>
+<tr>
+    <th>nutrient id</th>
+    <th>nutrient name</th>
+    <th>Actions</th>
+</tr>
+</center>
+</thead>
+<tbody>
+Macronutrients
+<center>
+<tr>
+    <center>
+    <td><input type="text" placeholder="Enter Nutrient id" name="Nutrient id" required></td>
+    <td><input type="text" placeholder="Enter Nutrient name" name="Nutrient name" required></td>
+    </center>
+    <td>
+        <a href="/edit{{nutrient.id}}"><span class="glyphicon-pencil">Edit</span></a>
+        <a href="/delete/{{employee.id}}">Delete</a>
+
+    </td>
+
+</tr>
+</center>
+
+</tbody>
+</table>
+<br>
+<br>
+<center><a href="/nut" class="btn btn-primary">Add new item</a></center>
+</body>
+</html>

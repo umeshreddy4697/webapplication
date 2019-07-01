@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>edititem</title>
+    Update Nutrients
+    <link rel="stylesheet" href="{%static '/style.css'%}"/>
+
+</head>
+<body>
+<style>
+	body {
+ background-color:hsla(120,100%,25%,0.3);
+}
+</style>
+
+<form method="POST" class="post-form" action="/update/{{macro.id}}">
+
+    <div class="container">
+<br>
+        <div class="form-group row">
+            <label class="col-sm-l col-form-label"></label>
+            <div class="col-sm-4">
+            <h3>update details</h3>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-sm-l col-form-label"></label>
+            <div class="col-sm-4">
+                <input type="text" placeholder="Enter Nutrient id" name="Nutrient id" required>
+
+
+    </div>
+        </div>
+     <div class="form-group row">
+            <label class="col-sm-l col-form-label"></label>
+            <div class="col-sm-4">
+                <input type="text" placeholder="Enter Nutrient name" name="Nutrient name" required>
+            </div>
+     </div>
+        <div class="form-group row">
+            <label class="col-sm-l col-form-label"></label>
+            <div class="col-sm-4">
+                <button type="submit" class ="btn btn-success">Update</button>
+            </div>
+        </div>
+    </div>
+
+
+
+</form>
+</body>
+</html>
